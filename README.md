@@ -1,6 +1,6 @@
 # ScoreSaberScoreToTxt
-A script that reads ScoreSaber profile statistics and writes it in a file.
-Usefull for displaying it f.e. in a livestream.
+A script that reads ScoreSaber profile statistics and writes it in a file in a human readable form.
+Useful for displaying your rank in f.e. a livestream.
 
 # Setup
 * Open the "config.ini" file and put in the URL of your ScoreSaber profile and set your country.

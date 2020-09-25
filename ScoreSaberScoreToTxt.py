@@ -17,7 +17,7 @@ req = Request(url=confurl, headers=headers)
 while(True):
     html = urlopen(req).read()
 
-    result = re.search('global">(#[0-9,.]+)</.*png" /> (#[0-9,.]+).*nts:</strong> ([0-9.]+pp).*ount:</strong> ([0-9.,]+).* Score:</strong> ([0-9,]+)', str(html))
+    result = re.search('global">(#[0-9,.]+)</.*png" /> (#[0-9,.]+).*nts:</strong> ([0-9,.]+pp).*ount:</strong> ([0-9.,]+).* Score:</strong> ([0-9,]+)', str(html))
     o = 'Score Saber Ranking:\nWorldwide: ' + result.group(1) + ' ' + config['(optional) Settigns']['country'] + ': ' + result.group(2) + '\nPerformance Points: ' + result.group(3) + ' \nPlay Count: ' + result.group(4) + '\nTotal Score: ' + result.group(5)
     print(o)
     f = open(config['(optional) Settigns']['filename'], "w")
